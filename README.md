@@ -31,6 +31,7 @@ The system supports **user authentication**, **role-based access**, and **event 
 ---
 
 ## ⚙️ Project Structure
+
 event-planner-app/
 │
 ├── cmd/
@@ -68,3 +69,15 @@ event-planner-app/
 ├── go.mod # Go module definition
 ├── go.sum # Dependency lock file
 └── README.md # Project documentation
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/olukeseun/event-planner-app.git
+cd event-planner-app
+
