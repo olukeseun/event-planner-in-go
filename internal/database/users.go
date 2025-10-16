@@ -1,0 +1,22 @@
+package database
+
+import (
+	"database/sql"
+	"time"
+)
+
+type UserModel struct {
+	db *sql.DB
+}
+
+// User represents a single user entity in the system, typically mapped to a database table.
+type User struct {
+	ID          int64     `json:"id" db:"id"`
+	FirstName   string    `json:"first_name" db:"first_name"`
+	LastName    string    `json:"last_name" db:"last_name"`
+	Email       string    `json:"email" db:"email"`
+	Password    string    `json:"-" db:"-"`
+	PhoneNumber bool      `json:"phoneNumber" db:"phoneNumber"`
+	CreatedAt   time.Time `json:"created_at" db:"created_at"`
+	// UpdatedAt time.Time `json:"updated_at" db:"updated_at"`
+}
