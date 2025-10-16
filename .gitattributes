@@ -1,2 +1,34 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# 🗓️ Event Planner App
+
+An **Event Planner Web API** built with **Go (Gin Framework)** that allows users to create, manage, and join events.  
+The system supports **user authentication**, **role-based access**, and **event scheduling**, making it ideal for individuals, teams, or organizations planning meetups, conferences, or social gatherings.
+
+---
+
+## 🚀 Tech Stack
+
+- **Language:** Go (Golang)
+- **Framework:** [Gin Gonic](https://github.com/gin-gonic/gin)
+- **Database:** PostgreSQL (or MySQL)
+- **ORM:** GORM
+- **Authentication:** JWT (JSON Web Tokens)
+- **Configuration:** GoDotEnv
+- **API Documentation:** Swagger (optional)
+- **Containerization:** Docker (optional)
+
+---
+
+## 📦 Features
+
+- 👤 **User Authentication** (Sign up, Login, Logout)
+- 🎟️ **Create, Update, Delete Events**
+- 🗓️ **View Upcoming Events**
+- 🤝 **Join or Leave Events**
+- 🧑‍💼 **Role-based Access Control** (Organizer / Attendee)
+- 📩 **Event Invitations**
+- 🔔 **Email or Push Notifications (optional)**
+
+---
+
+## ⚙️ Project Structure
+
