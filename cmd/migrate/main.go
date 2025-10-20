@@ -1,6 +1,7 @@
 package main
 
 import (
+	"event-planner-in-go/env"
 	"log"
 
 	"github.com/golang-migrate/migrate/v4"
@@ -10,11 +11,11 @@ import (
 
 func main() {
 	// Define the database connection string and path to migration files
-	dbURL := "postgres://postgres:shongokeye@localhost:5432/eventplannerDB?sslmode=disable"
+	connStr := env.GetEnvString("DATABASE_URL", "")
 	migrationsPath := "file://cmd/migrate/migrations" // Note the 'file://' prefix
 
 	// Create a new migrate instance
-	m, err := migrate.New(migrationsPath, dbURL)
+	m, err := migrate.New(migrationsPath, connStr)
 	if err != nil {
 		log.Fatalf("could not create migrate instance: %v", err)
 	}

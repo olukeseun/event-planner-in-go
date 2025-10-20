@@ -79,5 +79,5 @@ event-planner-app/
 
 ```bash
 git clone https://github.com/olukeseun/event-planner-app.git
-cd event-planner-app...........
+cd event-planner-app
 

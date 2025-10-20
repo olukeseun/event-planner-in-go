@@ -6,7 +6,7 @@ type Models struct {
 	Users     UserModel
 	Events    EventModel
 	Attendees AttendeeModel
-	Waiter    WaiterModel
+	// Waiter    WaiterModel
 }
 
 func NewModel(db *sql.DB) Models {
@@ -14,6 +14,6 @@ func NewModel(db *sql.DB) Models {
 		Users:     UserModel{db},
 		Events:    EventModel{db},
 		Attendees: AttendeeModel{db},
-		Waiter:    WaiterModel{db},
+		// Waiter:    WaiterModel{db},
 	}
 }
